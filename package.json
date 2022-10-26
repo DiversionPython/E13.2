@@ -1,0 +1,31 @@
+{
+  "name": "e13",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack --mode=development",
+    "build_watch": "webpack --watch",
+    "sjson": "json-server --watch database.json --port 3000",
+    "dev": "webpack serve --config ./webpack.development.js",
+    "prod": "webpack serve --config ./webpack.production.js",
+    "prepare": "husky install",
+    "lint": "eslint ./src"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "clean-webpack-plugin": "^4.0.0",
+    "css-loader": "^6.7.1",
+    "eslint": "^8.26.0",
+    "html-webpack-plugin": "^5.5.0",
+    "husky": "^8.0.1",
+    "mini-css-extract-plugin": "^2.6.1",
+    "style-loader": "^3.3.1",
+    "webpack": "^5.74.0",
+    "webpack-cli": "^4.10.0"
+  },
+  "dependencies": {
+    "webpack-dev-server": "^4.11.1"
+  }
+}
