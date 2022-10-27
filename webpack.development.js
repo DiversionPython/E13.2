@@ -20,10 +20,9 @@ module.exports = {
         allowedHosts: ['auto',],
         liveReload:true,
         hot: true,
-        stats: {
-            children: false,
-            maxModules: 0
-        }
+    },
+    stats: {
+        children: false,
     },
     plugins: [
         new HtmlWebpackPlugin({

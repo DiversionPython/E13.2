@@ -18,10 +18,9 @@ module.exports = {
         compress: true,
         port: 9000,
         allowedHosts: ['auto',],
-        stats: {
-            children: false,
-            maxModules: 0
-        }
+    },
+    stats: {
+        children: false,
     },
     plugins: [
         new HtmlWebpackPlugin({
